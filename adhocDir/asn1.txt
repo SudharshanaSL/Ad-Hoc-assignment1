@@ -1,0 +1,39 @@
+link:https://www.dropbox.com/sh/riidntkiqg4nxkq/AAC42mrZMWmjsiyMiuwSTlXTa?dl=0
+Assignment-01 Requirement
+Vision: Avoid use of pendrives to carry out data xfer
+Note: Functionality is more important. UI is not
+
+Develop a client program which does the following
+1. Gets the id of program as param
+2. A initiator of the group starts the Adhoc wifi network.
+ 	   SSId to be provided as parameter
+  	   SSId should use WPA-PSK
+3. For group members, searches for the SSId availability and joins the network
+  	  SSId is provided as parameter
+4. Assigns IP address in the range 10.x.y.z where
+  	  x.y.z corresponds to last 3 octets of MAC address
+5. Displays the neighbour node id and IP address.
+6. Asks for which dir/file (at least 1GB size) to transfer and to which nodes.
+   	  Can be more than one recipient nodes
+   	  Gets authentication from receiving node
+   	     Can be with guest or pre-created account
+   	     can be .rhosts mechanism
+  	  transfers the file
+  	  File is stored in pre-defined directory on receiver
+  	  can use scp/rcp mechanism
+7. Provides statistics of transfer operation.
+  	  . time to search for the network (for client)
+  	  . Time for file transfer and thruput.
+
+Evaluation:
+    All nodes (4 or 5) should initiate and complete transfer
+    Successful demo
+    Documentation and learning on the whole process
+    Portability of program on different machines
+        (for the time being can be Ubuntu)
+
+    Bonus:
+        A good blog to follow
+        Demo to HoDs/faculties
+
+
